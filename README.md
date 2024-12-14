@@ -1,6 +1,13 @@
 # postgresql.schema.parse
-First, it exports schema file from PostgreSQL with "pg_dump --schema-only". Then, parses the schema file for separating the each object types into separate folders and each object into a separate file.
+First, it exports schema file from PostgreSQL with "pg_dump --schema-only". Then, parses the schema file for separating the each object types into separate folders and each object into a separate file. You can also parse a previously extracted pg_dump file with this script with minor changes. 
 
+The code consists of 3 parts.<br>
+1. Extracting the schema file with PostgreSQL / pg_dump
+2. Parsing objects to folders and files with the Bash script
+3. Archiving all files and converting them into a single file
+You can change any of these steps.<br>
+
+Detailed Steps;<br>
 1. Download postgresql.schema.parse.sh file to any folder of you<br />
 ![schema folder shell](https://github.com/user-attachments/assets/23750bfa-8da6-465b-912c-b05290185254)<br />
 2. Edit database configuration info on file<br />
