@@ -12,8 +12,8 @@ db_user="postgres"
 db_port="5432"
 # -------------------------------- #
 
-dump_file=$db_name"_"`date +%Y.%m.%d_%H%M`".sql"
-dump_path=$db_name"_"`date +%Y.%m.%d_%H%M`"_schema"
+dump_file=$db_name"_"`date +%Y.%m.%d_%H.%M`".sql"
+dump_path=$db_name"_"`date +%Y.%m.%d_%H.%M`"_schema"
 
 echo "Dump Starting..."
 sleep 1
